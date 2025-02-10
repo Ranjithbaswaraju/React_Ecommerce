@@ -1,8 +1,15 @@
 import React from "react";
 import "./Products.css"
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 
 const Products=({items,heading})=>{
+
+    const navigate=useNavigate()
+
+    const handleViewDetails=(id)=>{
+        navigate(`/product/${id}`)
+    }
     return(
         <div>
             <h1 className="heading">{heading}</h1>
@@ -21,7 +28,7 @@ const Products=({items,heading})=>{
                                     <CiShoppingCart /> Add To Cart
                                 </button>
 
-                                <button className="icon">
+                                <button className="icon" onClick={()=>handleViewDetails(item.id)} >
                                     <CiSearch/> View Details
                                 </button>
                             </div>
