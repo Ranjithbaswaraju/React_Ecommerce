@@ -4,9 +4,16 @@ import { allProducts } from "../../data";
 import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
 import "./SingleProduct.css"
+import { addToCart } from "../../redux/cartSlice";
+import { useDispatch } from "react-redux";
 
 const SingleProduct=()=>{
 
+    const dispatch=useDispatch()
+    const handleAddToCart=(product)=>{
+        dispatch(addToCart(product)
+        )
+    }
     const {id}=useParams()
     const product=allProducts.find((product)=>product.id==parseInt(id))
 
@@ -62,7 +69,7 @@ const SingleProduct=()=>{
                         </div>
                     </div>
                     <div className="addToCart">
-                        <button>Add to Cart</button>
+                        <button onClick={()=>handleAddToCart(product)}>Add to Cart</button>
                     </div>
                 </div>
             </div>
