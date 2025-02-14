@@ -5,7 +5,7 @@ import { BiShoppingBag } from "react-icons/bi";
 import { decreaseQuantity, increaseQuantity, removeFromCart } from "../../redux/cartSlice";
 import { IoClose } from "react-icons/io5";
 import Footer from "../../footer/Footer";
-import "./Cart.css";
+import "./cart.css";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
