@@ -20,20 +20,27 @@ const Navbar=()=>{
                     <IoSearch className="icon"/>
                 </div>
             </div>
-            <div className="navbar-center">
+           <Link to="/">
+           <div className="navbar-center">
                 <h1 className="navbar-logo">E-Commerce<span>.</span></h1>
             </div>
+           </Link>
+
+
+
             <div className="navbar-right">
                 <Link to="/register">
                 <div className="navbar-menuItem">Register</div></Link>
                <Link to="/login">
                     <div className="navbar-menuItem">Login</div>
                </Link>
+                <Link to="/cart">
                 <div className="navbar-menuItem">
                     <MdOutlineShoppingCart className="icon"/>
                     {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
                 </div>
-                <div>Cart</div>
+                </Link>
+                
             </div>
         </div>
        </nav>
