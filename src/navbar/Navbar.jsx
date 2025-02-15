@@ -4,6 +4,7 @@ import { IoSearch } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import logo from '../assets/logo.webp';
 const Navbar=()=>{
 
 
@@ -22,7 +23,7 @@ const Navbar=()=>{
             </div>
            <Link to="/">
            <div className="navbar-center">
-                <h1 className="navbar-logo">E-Commerce<span>.</span></h1>
+                <h1 className="navbar-logo">FEMME-CART<span>.</span></h1>
             </div>
            </Link>
 
