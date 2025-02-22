@@ -58,8 +58,10 @@
   .login-wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-    margin: -15px 0 15px;
+    font-size: 14px;
+    top: 30px;
+    margin: 20px;
+    /* margin: -15px 0 15px; */
   }
   
   .remember-forgot label input {
@@ -104,4 +106,8 @@
   
   .register-link p a:hover {
     text-decoration: underline;
+  }
+  .error-message{
+    color: red;
+    font-size: 12px;
   }

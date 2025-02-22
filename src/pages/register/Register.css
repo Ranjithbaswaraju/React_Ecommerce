@@ -76,3 +76,8 @@
     color: #333;
     font-weight: 700;
   }
+  .error {
+    color: red;
+    font-size: 9px;
+    margin-top: 35px;
+}
