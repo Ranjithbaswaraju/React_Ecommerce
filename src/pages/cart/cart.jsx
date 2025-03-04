@@ -43,14 +43,14 @@ const Cart = () => {
                       <img src={item.img} alt="" className="cart-product-image" />
                       <p>{item.title}</p>
                     </div>
-                    <div className="cart-price">${item.price}</div>
+                    <div className="cart-price">₹ {item.price}</div>
                     <div className="cart-quantity">
                       <button onClick={() => dispatch(decreaseQuantity(item))}>-</button>
                       <span>{item.quantity}</span>
                       <button onClick={() => dispatch(increaseQuantity(item))}>+</button>
                     </div>
                     <div className="cart-total">
-                      ${parseFloat(item.price * item.quantity).toFixed(2)}
+                    ₹ {parseFloat(item.price * item.quantity).toFixed(2)}
                     </div>
                     <button className="remove-btn" onClick={() => dispatch(removeFromCart(item))}>
                       <IoClose size={20} />
@@ -64,7 +64,7 @@ const Cart = () => {
                 <div className="summary-details">
                   <div className="summary-item">
                     <span>Price :</span>
-                    <span>${totalPrice.toFixed(2)}</span>
+                    <span>₹{totalPrice.toFixed(2)}</span>
                   </div>
                   <div className="summary-item">
                     <span>Delivery :</span>
@@ -72,7 +72,7 @@ const Cart = () => {
                   </div>
                   <div className="summary-item">
                     <span>Total :</span>
-                    <span>${totalPrice.toFixed(2)}</span>
+                    <span>₹ {totalPrice.toFixed(2)}</span>
                   </div>
                 </div>
                 <button className="checkout-btn">Proceed to Checkout</button>

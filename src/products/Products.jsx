@@ -27,7 +27,7 @@ const Products=({items,heading})=>{
                             <img src={item.img} alt="" className="product-image"/>
                             <div className="product-desc">
                                 <h3>{item.title}</h3>
-                                <span>${item.price}</span>
+                                <span>₹ {item.price}</span>
                             </div>
 
                             <div className="product-info">

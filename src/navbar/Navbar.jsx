@@ -16,10 +16,7 @@ const Navbar=()=>{
         <div className="navbar-wrapper">
             <div className="navbar-left">
                 <span className="navbar-language">EN</span>
-                <div className="navbar-searchContainer">
-                    <input type="text" placeholder="Search" className="navbar-input"/>
-                    <IoSearch className="icon"/>
-                </div>
+                
             </div>
            <Link to="/">
            <div className="navbar-center">
