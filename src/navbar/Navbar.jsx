@@ -20,7 +20,7 @@ const Navbar=()=>{
             </div>
            <Link to="/">
            <div className="navbar-center">
-                <h1 className="navbar-logo">FEMME-CART<span>.</span></h1>
+                <h1 className="navbar-logo">FEMME-CART<span></span></h1>
             </div>
            </Link>
 
